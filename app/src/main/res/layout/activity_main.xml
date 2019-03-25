@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgrect">
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bigLayout"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Abhi connect nahi huwa hoon. Koi button mat dabayio!"
+            android:textColor="#ffffff"
+            android:id="@+id/text"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/airconditionerlogo"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="-05dp">
+            <Button
+                android:id="@+id/T16"
+                android:text="16C turbo"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/rect1"
+                android:layout_marginTop="220dp"
+                android:drawableLeft="@drawable/t16"
+                android:paddingLeft="20dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp" />
+            <Button
+                android:id="@+id/N22"
+                android:text="22C normal"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/rect1"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/n22"
+                android:paddingLeft="20dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"/>
+            <Button
+                android:id="@+id/OFF"
+                android:text="off"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/rect1"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/off"
+                android:paddingLeft="20dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
